@@ -1,0 +1,49 @@
+<header class="fixed-top" [ngClass]="{'toggleHeader': toggleNav }"  (scroll)="onWindowScroll();">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg shadow-0 py-2">
+
+            <button class="navbar-toggler p-0" type="button" data-toggle="collapse" (click)="togleNav()"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
+                <div [ngClass]="{'toggleBtn': toggleNav}" class="d-block">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
+
+            <a class="navbar-brand nav-link p-0 m-0" routerLink="/" (click)="closeNav()" >
+                <img src="./assets/img/logo/logo.png" class="my-auto" width="180px" >
+            </a>
+
+            <div class="collapse navbar-collapse" [ngClass]="{'toggleNav': toggleNav}" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto smooth-scroll me-5">
+
+                    <li class="nav-item">
+                        <a (click)="closeNav()" class="nav-link" routerLink="about" routerLinkActive="active" data-aos="fade-up" data-aos-duration="900">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a (click)="closeNav()" class="nav-link" routerLink="howitworks" routerLinkActive="active" data-aos="fade-up" data-aos-duration="1100">How it Works ?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a (click)="closeNav()" class="nav-link" routerLink="transport" routerLinkActive="active" data-aos="fade-up" data-aos-duration="1300">Transport Options</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a (click)="closeNav()" class="nav-link" routerLink="whoweserve" routerLinkActive="active" data-aos="fade-up" data-aos-duration="1500">Who We Serve ?</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a (click)="closeNav()" class="nav-link" routerLink="contacts" routerLinkActive="active" data-aos="fade-up" data-aos-duration="1700">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="phone" [ngClass]="{'togglePhone': toggleNav}">
+                <a href="tel:+13094399750" class="btn btn-danger text-light outline-light font-s-16 d-flex"><i class="fa fa-phone font-s-20"></i><span class="ms-2">+1 (309) 439-9750</span></a>
+            </div>
+        </nav>
+    </div>
+</header>

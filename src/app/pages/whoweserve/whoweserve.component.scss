@@ -1,0 +1,27 @@
+#transport {
+    background: var(--main-dark);
+
+    .row > * {
+        display: flex;
+        align-items: center;
+    }
+
+    .bg-image {
+        display: flex;
+        justify-content: center;
+
+        img {
+            border-radius: 16px;
+        }
+    }
+
+    .blog-title {
+        margin-top: 0;
+    }
+
+    .card-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--main-light);
+    }
+}

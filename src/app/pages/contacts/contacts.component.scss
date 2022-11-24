@@ -1,0 +1,70 @@
+#contacts {
+    background: var(--main-dark);
+
+    .card {
+        border-radius: 30px;
+
+        .card-body {
+            padding: 2rem;
+
+            .card-title {
+                font-size: 32px;
+                color: var(--main-dark);
+            }
+
+            .card-text{
+                font-size: 16px;
+                font-weight: 500;
+                margin: 30px 0;
+                color: var(--main-dark);
+            }
+
+            button {
+                background: var(--main-dark);
+                color: var(--light);
+
+                &:hover {
+                    background: var(--dark);
+                }
+            }
+
+            .form-outline {
+                margin: 20px 0;
+
+                label {
+                    color: var(--dark-light);
+                }
+
+                .form-control{
+                    color: var(--dark)
+                }
+
+                .form-control:focus~.form-notch {
+                    .form-notch-middle {
+                        border-color: var(--main-dark);
+                    }
+
+                    .form-notch-leading {
+                        border-top: 0.125rem solid var(--main-dark);
+                        border-bottom: 0.125rem solid var(--main-dark);
+                        border-left: 0.125rem solid var(--main-dark);
+                    }
+
+                    .form-notch-trailing {
+                        border-top: 0.125rem solid var(--main-dark);
+                        border-bottom: 0.125rem solid var(--main-dark);
+                        border-right: 0.125rem solid var(--main-dark);
+                    }
+                }
+            }
+        }
+    }
+
+    .img-block{
+        i {
+            width: 20px;
+            text-align: center;
+            margin-right: 20px;
+        }
+    }
+}

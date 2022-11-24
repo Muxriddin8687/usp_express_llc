@@ -1,0 +1,18 @@
+#transport {
+    background: var(--main-dark);
+
+    .bg-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-title {
+        margin-top: 0;
+    }
+
+    .card-text {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--main-light);
+    }
+}

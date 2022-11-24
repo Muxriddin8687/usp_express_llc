@@ -1,0 +1,39 @@
+#goal-section {
+    background: var(--dark);
+
+    .card {
+        border: 1px solid var(--light);
+        background: var(--dark);
+        padding-bottom: 30px;
+        transition: all 0.2s;
+        color: var(--main-light);
+        box-shadow: none;
+        height: 100%;
+        cursor: pointer;
+
+        &:hover {
+            top: -5px;
+            // background-color: #494a62;
+            background-color: var(--main-dark);
+        }
+
+        .img-content{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            color: var(--light);
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+}

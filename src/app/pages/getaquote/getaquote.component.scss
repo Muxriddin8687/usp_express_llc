@@ -1,0 +1,10 @@
+#form-section{
+    background: var(--dark);
+    .form-header{
+        display: flex;
+        justify-content: space-around;
+    }
+    label {
+        top: 3px;
+    }
+}

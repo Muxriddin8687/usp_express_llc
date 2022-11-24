@@ -1,0 +1,47 @@
+#section-block{
+    background: var(--main-dark);
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    .card{
+        position: relative;
+        background: transparent;
+        box-shadow: 0 10px 20px 0 var(--light-dark);
+        overflow: hidden;
+        padding: 20px 10px;
+        height: 100%;
+
+        .card-number{
+            position: absolute;
+            top: -10px;
+            left: -15px;
+            width: 60px;
+            height: 60px;
+            padding-top: 20px;
+            text-align: center;
+            border: 2px solid var(--main-light);
+            background-color: var(--light-dark);
+            border-radius: 50%;
+            color: var(--light);
+            font-size: 36px;
+        }
+
+        .card-title {
+            text-align: end;
+            color: var(--light);
+            font-size: 26px;
+            padding-right: 16px;
+        }
+
+        .card-body{
+            text-align: end;
+            font-size: 20px;
+			line-height: 1.5rem;
+            font-weight: 500;
+            color: rgb(200, 200, 200);
+        }
+    }
+}
+
+

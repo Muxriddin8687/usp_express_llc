@@ -1,0 +1,222 @@
+<div id="form-section" class="pt-5">
+    <div class="container py-5">
+        <div class="mx-auto col-11 col-sm-10 col-md-9 col-lg-8 col-xl-8">
+            <div class="card px-3 py-4 bg-transparent">
+                <div class="form-header mt-3 mb-5">
+                    <img src="./assets/img/logo/logo.png" width="40%" alt="">
+
+                    <h2 class="blog-title">Quote Request Form</h2>
+                </div>
+                <form class="bg-light" lang="en" #q="ngForm" (submit)="sendFrom(q)">
+
+                    <!-- 1 -->
+                    <div class="border mb-2 py-3 px-4">
+                        <b>1</b><span class="ms-3">Origin & Destination</span>
+
+                        <div class="row mt-3">
+                            <!-- pickup location -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4">
+                                    <i class="fa fa-flag me-2 trailing"></i>
+                                    <input ngModel name="from" type="text"  class="form-control" placeholder=" " />
+                                    <label class="form-label">Pickup Location</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- delivery location -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4">
+                                    <i class="fa fa-flag me-2 trailing"></i>
+                                    <input ngModel name="to" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Delivery Location</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="border mb-2 py-3 px-4">
+                        <b>2</b><span class="ms-3">Vehicle Details</span>
+
+                        <div class="row mt-3">
+                            <!-- year -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-3 col-lg-3 col-xl-3">
+                                <div class="form-outline mb-4">
+                                    <div class="trailing">Y</div>
+                                    <input ngModel name="year" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Year</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- make -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-4 col-lg-4 col-xl-4">
+                                <div class="form-outline mb-4">
+                                    <div class="trailing">M</div>
+                                    <input ngModel name="make" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Make</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- model -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-5 col-lg-5 col-xl-5">
+                                <div class="form-outline mb-4">
+                                    <div class="trailing">M</div>
+                                    <input ngModel name="model" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Model</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <p class="my-3">Add another vehicle</p> -->
+
+                            <!-- radio btn -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4 pt-1">
+                                    <i class="fa fa-truck trailing"></i>
+                                    <div class="form-control">
+                                        <div class="row">
+                                            <div class="mx-auto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                                <input ngModel name="truck" value="Open/Standart" id="qwe1" checked type="radio" class="form-check-input" />&nbsp;&nbsp;
+                                                <label for="qwe1">Open/Standard</label>
+                                            </div>
+                                            <div class="mx-auto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                                <input ngModel name="truck" value="Enclosed" id="qwe2" type="radio" class="form-check-input" />&nbsp;&nbsp;
+                                                <label for="qwe2">Enclosed</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- radio btn -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4 pt-1">
+                                    <i class="fa fa-truck trailing"></i>
+                                    <div class="form-control">
+                                        <div class="row">
+                                            <div class="mx-auto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                                <input ngModel name="driver" value="Vehicle drives" id="qw1" checked type="radio" class="form-check-input" />&nbsp;&nbsp;
+                                                <label for="qw1">Vehicle drives</label>
+                                            </div>
+                                            <div class="mx-auto col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                                <input ngModel name="driver" value="Inoperable" id="qw2" type="radio" class="form-check-input" />&nbsp;&nbsp;
+                                                <label for="qw2">Inoperable</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="border mb-2 py-3 px-4">
+                        <b>3</b><span class="ms-3">Shipment Details</span>
+
+                        <div class="row mt-3">
+                            <!-- date -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <!-- <mat-form-field class="w-100" appearance="outline">
+                                    <mat-label>Choose a date</mat-label>
+                                    <input ngModel name="date" matInput [matDatepicker]="picker" required >
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field> -->
+                                <div class="form-outline mb-4">
+                                    <input ngModel name="date" type="date" class="form-control" value="dd.mm.YYYY" />
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- name -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4">
+                                    <i class="fa fa-user me-2 trailing"></i>
+                                    <input ngModel name="name" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Name</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- email -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4">
+                                    <i class="fa fa-envelope me-2 trailing"></i>
+                                    <input ngModel name="email" type="email" class="form-control" placeholder=" " />
+                                    <label class="form-label">Email</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- name -->
+                            <div class="mx-auto col-11 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+                                <div class="form-outline mb-4">
+                                    <i class="fa fa-phone me-2 trailing"></i>
+                                    <input ngModel name="phone" type="text" class="form-control" placeholder=" " />
+                                    <label class="form-label">Phone</label>
+                                    <div class="form-notch">
+                                        <div class="form-notch-leading"></div>
+                                        <div class="form-notch-middle"></div>
+                                        <div class="form-notch-trailing"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="btn btn-danger d-block mx-auto my-4" type="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

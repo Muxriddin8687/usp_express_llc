@@ -1,0 +1,74 @@
+<footer class="pt-5 pb-4">
+    <!-- <div class="custom-shape-divider-bottom-1637129915">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div> -->
+
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto col-11 col-sm-11 col-md-2">
+                    <img src="./assets/img/logo/logo.png" class="w-100 mb-3" alt="">
+                    <img src="./assets/img/logo/fmcsa-footer.svg" class="w-100 mb-3" alt="">
+                </div>
+                <div class="mx-auto col-11 col-sm-11 col-md-3">
+                    <h5>
+                        <p>Address:</p>
+                        <a class="font-s-16 fw-bold" href="http://google.maps">4144 11TH AVENUE A MOLINE, IL 61265</a>
+                    </h5>
+                    <h5>
+                        <p>Phone:</p>
+                        <a class="font-s-16 fw-bold" href="tel:+13094399750">+1 (309) 439-9750</a>
+                    </h5>
+                    <h5>
+                        <p>Email:</p>
+                        <a class="font-s-16 fw-bold" href="mailto:info@uspexpressllc.com">info@uspexpressllc.com</a>
+                    </h5>
+                </div>
+                <div class="quick-links mx-auto col-11 col-sm-11 col-md-2">
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a routerLink="about" (click)="closeNav()">About Us</a></li>
+                        <li><a routerLink="howitworks" (click)="closeNav()">How it Works ?</a></li>
+                        <li><a routerLink="transport" (click)="closeNav()">Transport Options</a></li>
+                        <li><a routerLink="whoweserve" (click)="closeNav()">Who We Serve ?</a></li>
+                        <li><a routerLink="contacts" (click)="closeNav()">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="mx-auto col-11 col-sm-11 col-md-4">
+                    <h5>Contact us</h5>
+
+                    <form class="d-flex" #e="ngForm" (submit)="sendFrom(e)">
+                        <div class="form-outline">
+                            <i class="fa fa-envelope text-light me-2 trailing"></i>
+                            <input type="email" ngModel name="email" class="form-control text-light" required />
+                            <label class="form-label text-light" style="top:3px;">Email</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading"></div>
+                                <div class="form-notch-middle"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-light fw-bold ms-1" type="submit">send</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4 bg-light">
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="mx-auto mb-2 col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                <span class="text-light">© {{ date }} USP Express LLC. All rights reserved.</span>
+            </div>
+            <div class="mx-auto text-end mb-2 col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6">
+                <a class="text-light me-3" routerLink="/">Privacy Policy</a>
+                <a class="text-light" routerLink="/">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,196 @@
+header.fixed-top {
+    background: #1a1b263e;
+    transition: all .3s;
+    padding-top: 20px;
+    z-index: 100;
+
+    &.toggleHeader {
+        background-color: var(--light-dark);
+        padding-bottom: 20px;
+    }
+}
+
+header nav {
+    padding: 0;
+
+    .navbar-toggler {
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            margin: 6px 0;
+            height: 3px !important;
+            background-color: var(--light);
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        .bar1 {
+            width: 35px;
+        }
+
+        .bar2 {
+            width: 25px;
+        }
+
+        .bar3 {
+            width: 15px;
+        }
+
+        &:hover {
+            .bar2 {
+                width: 35px;
+            }
+
+            .bar3 {
+                width: 35px;
+            }
+        }
+
+        .toggleBtn {
+            .bar1 {
+                width: 35px;
+                -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+                transform: rotate(-45deg) translate(-7px, 7px);
+            }
+
+            .bar2 {
+                opacity: 0;
+            }
+
+            .bar3 {
+                width: 35px;
+                -webkit-transform: rotate(45deg) translate(-6px, -6px);
+                transform: rotate(45deg) translate(-6px, -6px);
+            }
+        }
+    }
+
+
+    .navbar-brand h3 {
+        display: none;
+    }
+
+    ul li {
+        align-self: center;
+
+        a {
+            position: relative !important;
+            cursor: pointer;
+
+            &.nav-link {
+                color: var(--light);
+                font-weight: 650;
+                font-size: 16px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                bottom: 2px;
+                left: 0;
+                opacity: 0;
+                background-color: var(--light);
+                -webkit-transition: all 0.2s ease-out;
+                -moz-transition: all 0.2s ease-out;
+                -ms-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                z-index: -1;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: calc(100% - 6px);
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-image: -webkit-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+                background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+                background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+                background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+                -webkit-transition: all 0.2s ease-out;
+                -moz-transition: all 0.2s ease-out;
+                -ms-transition: all 0.2s ease-out;
+                -o-transition: all 0.2s ease-out;
+                transition: all 0.2s ease-out;
+                z-index: -1;
+            }
+
+            &:hover {
+                &::before {
+                    bottom: 2px;
+                    opacity: 1;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        a.active{
+            &::before {
+                bottom: 2px;
+                opacity: 1;
+            }
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+    .phone a {
+        border: 1px solid var(--light);
+    }
+
+
+    .toggleNav {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        display: block !important;
+
+        ul {
+            margin: 20px 0 !important;
+        }
+    }
+
+
+    .phone.togglePhone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+
+
+header.sticky_navigation {
+    background-color: var(--light-dark);
+    display: block;
+    padding: 0;
+    border-bottom: 1px solid var(--light);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+

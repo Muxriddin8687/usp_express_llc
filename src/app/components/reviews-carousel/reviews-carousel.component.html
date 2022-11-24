@@ -1,0 +1,106 @@
+<section id="reviews">
+    <div class="container py-5">
+        <h2 class="blog-title"><i class="fa fa-star-o me-3"></i>Reviews</h2>
+
+
+        <div class="swiper-button-next-reviews">
+            <i class="fa fa-chevron-right"></i>
+        </div>
+        <div class="swiper-button-prev-reviews">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+
+        <div class="my-4">
+            <swiper [config]="config">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sw-item p-3">
+                            <div class="header d-flex">
+                                <img src="./assets/img/logo/review_logo.jpg" alt="header-img">
+                                <div>
+                                    <div class="header-title">Jason Mark</div>
+                                    <div class="header-sub-title">California</div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="body-title">Outstanding service!</div>
+                                <div class="body-text">{{ data[0] }} ...</div>
+                            </div>
+                            <div class="footer d-flex justify-content-between">
+                                <div>
+                                    <span>5</span>
+                                    <div class="d-flex">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/logo/google.png" alt="Google">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sw-item p-3">
+                            <div class="header d-flex">
+                                <img src="./assets/img/logo/review_logo.jpg" alt="header-img">
+                                <div>
+                                    <div class="header-title">John Baker</div>
+                                    <div class="header-sub-title">Boston</div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="body-title">Great servise - First time Cars shipping</div>
+                                <div class="body-text">{{ data[1] }} ...</div>
+                            </div>
+                            <div class="footer d-flex justify-content-between">
+                                <div>
+                                    <span>5</span>
+                                    <div class="d-flex">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/logo/google.png" alt="Google">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="sw-item p-3">
+                            <div class="header d-flex">
+                                <img src="./assets/img/logo/review_logo.jpg" alt="header-img">
+                                <div>
+                                    <div class="header-title">Andrew Robertson</div>
+                                    <div class="header-sub-title">Chicago</div>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <div class="body-title">Phenomenal experience!</div>
+                                <div class="body-text">{{ data[2] }} ...</div>
+                            </div>
+                            <div class="footer d-flex justify-content-between">
+                                <div>
+                                    <span>5</span>
+                                    <div class="d-flex">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/logo/google.png" alt="Google">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </swiper>
+        </div>
+    </div>
+</section>

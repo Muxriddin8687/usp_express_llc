@@ -1,0 +1,293 @@
+@use '@angular/material' as mat;
+@include mat.core();
+$logistic-primary: mat.define-palette(mat.$blue-palette, 50);
+$logistic-accent: mat.define-palette(mat.$blue-grey-palette);
+$logistic-warn: mat.define-palette(mat.$blue-grey-palette);
+
+$logistic-theme: mat.define-dark-theme((color: (primary: $logistic-primary,
+				accent: $logistic-accent,
+				warn: $logistic-warn,
+			)));
+
+@include mat.all-component-themes($logistic-theme);
+
+
+:root {
+	--light: #ffffff;
+	--main-light: #CECED2;
+	--dark-light: #919191;
+
+	--light-dark: #363749;
+	--main-dark: #28293A;
+	--dark: #1A1B26;
+
+	--info: #38b8e3;
+}
+
+
+/* scroll style */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #fff;
+	border-radius: 2px;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 550;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+h2.blog-title {
+	color: var(--light);
+	margin: 30px 0;
+	font: 600 32px 'Nunito Sans', sans-serif !important;
+}
+
+
+
+
+
+button,
+button:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.font-s-12 {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.font-s-14 {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.font-s-16 {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.font-s-18 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.font-s-20 {
+	font-size: 20px;
+	font-weight: 550;
+}
+
+.font-s-22 {
+	font-size: 22px;
+	font-weight: 550;
+}
+
+.font-s-24 {
+	font-size: 24px;
+	font-weight: 650;
+}
+
+.font-s-32 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (min-width: 1000px) {}
+
+
+
+@media screen and (max-width: 990px) {
+
+	nav {
+		.phone a span {
+			display: none;
+		}
+	}
+
+
+	.main-content .text-content h3 {
+		font-size: 24px !important;
+		width: 90px !important;
+	}
+
+
+	h2.blog-title {
+		margin-top: 30px !important;
+		margin-bottom: 25px !important;
+		text-align: center;
+		font-size: 26px !important;
+	}
+
+	.card-text {
+		font-size: 15px !important;
+	}
+
+	#section-block {
+		.card-title {
+			font-size: 19px !important;
+		}
+
+		.card-body {
+			line-height: 1.5rem;
+			font-size: 16px !important;
+		}
+	}
+
+	// #form-with-map {
+	// 	.padding-left {
+	// 		padding-left: 0 !important;
+	// 	}
+
+	// 	#glow,
+	// 	#myearth {
+	// 		width: 450px !important;
+	// 		height: 450px !important;
+	// 	}
+	// }
+
+
+	#reviews {
+
+		.swiper-button-next-reviews,
+		.swiper-button-prev-reviews {
+			top: 80px !important;
+			font-size: 18px !important;
+			padding: 5px 8px !important;
+		}
+
+		.swiper-button-next-reviews {
+			left: 89vw !important;
+		}
+
+		.swiper-button-prev-reviews {
+			left: calc(89vw - 30px) !important;
+		}
+	}
+
+
+	#trused {
+
+		.swiper-button-next-trused,
+		.swiper-button-prev-trused {
+			top: 80px !important;
+			font-size: 18px !important;
+			padding: 5px 8px !important;
+		}
+
+		.swiper-button-next-trused {
+			left: 89vw !important;
+		}
+
+		.swiper-button-prev-trused {
+			left: calc(89vw - 30px) !important;
+		}
+	}
+
+
+	#transport {
+		.img-right {
+			flex-direction: column-reverse;
+		}
+	}
+
+
+	#faq {
+		button::before {
+			right: 20px !important;
+		}
+	}
+
+	#contacts {
+		p {
+			font-size: 14px !important;
+		}
+	}
+
+	#main-video {
+		.info-content {
+			width: 75% !important;
+		}
+	}
+
+	#form-section{
+		img{
+			display: none;
+		}
+	}
+
+
+	footer {
+		.quick-links {
+			display: none !important;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 570px) {
+
+	nav {
+		.phone a span {
+			display: none;
+		}
+	}
+
+	.main-content h5 {
+		margin: 5% 0 !important;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: 70% !important;
+	}
+
+	// #form-with-map {
+
+	// 	#glow,
+	// 	#myearth {
+	// 		width: 350px !important;
+	// 		height: 350px !important;
+	// 	}
+	// }
+
+	#main-video {
+		.info-content {
+			width: 90% !important;
+		}
+	}
+}

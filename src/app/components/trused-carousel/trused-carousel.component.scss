@@ -1,0 +1,55 @@
+#trused {
+    background: var(--dark);
+    position: relative;
+
+    .swiper-wrapper .swiper-slide {
+
+        .sw-item {
+            padding: 20px 10px;
+            border-radius: 10px;
+            // width: 250px !important;
+            display: flex;
+            justify-content: center;
+            background: var(--light-dark);
+            border: .05px solid var(--dark-light);
+
+            &:hover {
+                background-color: #525367;
+            }
+
+            img {
+                width: 190px;
+                height: 80px;
+            }
+        }
+    }
+
+
+    .swiper-button-next-trused,
+    .swiper-button-prev-trused {
+        position: absolute;
+        top: 73px;
+        padding: 10px 15px;
+        display: flex;
+        font-size: 28px;
+        align-items: center;
+        justify-content: center;
+        color: var(--main-light);
+        border: 1px solid transparent;
+
+        &:hover{
+            border: 1px solid var(--light);
+            border-radius: 50%;
+            color: var(--light);
+        }
+    }
+
+    .swiper-button-next-trused {
+        left: 88vw;
+    }
+
+    .swiper-button-prev-trused {
+        left: calc(88vw - 50px);
+    }
+
+}

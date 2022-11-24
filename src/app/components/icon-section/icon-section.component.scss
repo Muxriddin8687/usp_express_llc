@@ -1,0 +1,29 @@
+#icon-section {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--main-dark);
+
+  .card {
+    border: 1px solid var(--light);
+    background: transparent;
+    transition: all 0.2s;
+    color: var(--light);
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--light);
+      color: var(--main-dark);
+    }
+
+    h3 {
+      margin: 15px 0;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}

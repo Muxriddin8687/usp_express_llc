@@ -1,0 +1,93 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .main-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        padding: 0 10%;
+        color: var(--light);
+        background: linear-gradient(270deg,rgba(26,27,38,0) -12.71%,rgba(3,20,16,.34) -12.7%,#1a1b26);
+
+        .text-content {
+            display: block;
+
+            .anDef {
+                position: relative;
+                font-weight: 600;
+                font-size: 30px;
+                width: 118px;
+
+                .letters {
+                    position: absolute;
+                    margin: 0;
+                    left: 110%;
+                    top: 0;
+                    right: 0;
+                    opacity: 0;
+                }
+            }
+
+            h5 {
+                font-size: 1.6em;
+            }
+
+            button.btn.btn-lg {
+                border: 1px solid var(--light);
+                font: message-box;
+
+                &:hover {
+                    border: 1px solid var(--light);
+                    background: var(--light-dark);
+                    color: var(--light) !important;
+                }
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        width: 100% !important;
+        height: 100vh !important;
+
+        .swiper-slide {
+            width: 100% !important;
+            height: 100vh !important;
+            z-index: 1;
+
+            .sw-item {
+                width: 100% !important;
+                height: 100vh !important;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after {
+        color: #fff;
+    }
+
+    .swiper-pagination {
+        position: absolute !important;
+        bottom: 50px;
+        right: 100px;
+        z-index: 3 !important;
+
+        &>span.swiper-pagination-bullet {
+            background-color: var(--light) !important;
+
+            &.swiper-pagination-bullet-active {
+                background-color: var(--light) !important;
+            }
+        }
+    }
+
+}
