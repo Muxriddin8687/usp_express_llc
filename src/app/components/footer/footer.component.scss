@@ -53,24 +53,17 @@ footer {
         border-right: 0.125rem solid var(--main-light);
     }
 
-    // .custom-shape-divider-bottom-1637129915 {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     overflow: hidden;
-    //     line-height: 0;
-    //     transform: rotate(180deg);
+    .social-media {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--main-light);
 
-    //     svg {
-    //         position: relative;
-    //         display: block;
-    //         width: calc(140% + 1.3px);
-    //         height: 186px;
-    //     }
-
-    //     .shape-fill {
-    //         fill: #EC7D1B !important;
-    //     }
-    // }
+        a {
+            color: var(--light);
+            font-size: 30px;
+            margin-left: 24px;
+        }
+    }
 }
