@@ -56,8 +56,7 @@ footer {
     .social-media {
         margin-top: 30px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         color: var(--main-light);
 
         a {
