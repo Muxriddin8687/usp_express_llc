@@ -31,14 +31,14 @@
               "./node_modules/swiper/swiper.min.css",
               "./node_modules/swiper/swiper-bundle.min.css",
               "./node_modules/aos/dist/aos.css",
-              "src/assets/css/font-awesome.min.css",
-              "src/assets/css/mdbcss.css",
-              "src/styles.scss"
+              "./src/assets/css/font-awesome.min.css",
+              "./src/assets/css/mdbcss.css",
+              "./src/styles.scss"
             ],
             "scripts": [
               "./node_modules/aos/dist/aos.js",
-              "src/assets/js/mdbjs.js",
-              "src/assets/js/index.js"
+              "./src/assets/js/mdbjs.js",
+              "./src/assets/js/index.js"
             ]
           },
           "configurations": {
@@ -108,14 +108,14 @@
               "./node_modules/swiper/swiper.min.css",
               "./node_modules/swiper/swiper-bundle.min.css",
               "./node_modules/aos/dist/aos.css",
-              "src/assets/css/font-awesome.min.css",
-              "src/assets/css/mdbcss.css",
-              "src/styles.scss"
+              "./src/assets/css/font-awesome.min.css",
+              "./src/assets/css/mdbcss.css",
+              "./src/styles.scss"
             ],
             "scripts": [
               "./node_modules/aos/dist/aos.js",
-              "src/assets/js/mdbjs.js",
-              "src/assets/js/index.js"
+              "./src/assets/js/mdbjs.js",
+              "./src/assets/js/index.js"
             ]
           }
         }
@@ -123,6 +123,9 @@
     }
   },
   "cli": {
-    "analytics": "65704be3-dcc1-43d8-bae5-56639af27a86"
+    "analytics": "65704be3-dcc1-43d8-bae5-56639af27a86",
+    "cache": {
+      "enabled": false
+    }
   }
 }

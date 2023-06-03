@@ -1,34 +1,5 @@
 # Logistic
 
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCh4hdZboTn3oUZex-2YhXPmCaTJ5pi5kU",
-  authDomain: "logistic-b1dc3.firebaseapp.com",
-  projectId: "logistic-b1dc3",
-  storageBucket: "logistic-b1dc3.appspot.com",
-  messagingSenderId: "607788877864",
-  appId: "1:607788877864:web:e37d62ee37acca7c2b0d1d",
-  measurementId: "G-8DH49DGG1R"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-
-
-ng build --prod --deploy-url https://merasoft-group.uz/logistika/ --base-href https://merasoft-group.uz/logistika/
-
-
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
 ## Development server
