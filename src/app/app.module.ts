@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AppComponent } from './app.component';
 import { AppRoutingModule } from './core/app-routing.module';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
@@ -14,7 +15,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatButtonModule } from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
-import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
